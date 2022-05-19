@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="principal">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cajero Automatico</title>
+
+    <script defer src="script.js"></script> 
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <h1>TU CAJERO AUTOMATICO</h1>
+    </nav>
+
+    <section id="login">
+       <div class="datos" style="display: flex; justify-content: center;">
+            <input type="text" id="user" placeholder="Usuario">
+       </div>
+
+        <div class="datos" style="display: flex; justify-content: center;">
+            <div>
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+        </div>
+        
+        <button id="btn-login">Acceder</button>
+    </section>
+
+    <section id="noti" style="visibility: hidden;">
+        <div class="subtitulo"><h3>¿Que accion desea realizar?</h3></div>
+    </section>
+
+    <section id="menu" style="visibility: hidden;">
+        <div class="accion" id="consultar">
+            <p>Consultar saldo</p> 
+        </div>
+
+        <div class="accion" id="ingresar">
+            <p>Ingresar Monto</p> 
+        </div>
+
+        <div class="accion" id="retirar">
+            <p>Retirar Monto</p> 
+        </div>
+
+        <a href="index.html" class="accion" id="salir">
+            <p>Salir</p> 
+        </a>
+    </section>
+
+</body>
+</html>
